@@ -1,6 +1,149 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="24.8.9">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="24.8.9" pages="2">
   <diagram name="Page-1" id="YC-KoC2WenPLKJSlj0ga">
-    <mxGraphModel>
+    <mxGraphModel dx="956" dy="569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-1" value="User" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="90" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-2" value="UserID//primary key&lt;div&gt;Firstname&lt;/div&gt;&lt;div&gt;Lastname&lt;/div&gt;&lt;div&gt;email&lt;/div&gt;&lt;div&gt;password&lt;/div&gt;&lt;div&gt;status/role&lt;/div&gt;&lt;div&gt;lastlogin&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-1">
+          <mxGeometry y="30" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-6" value="student" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-7" value="studentID//primary key&lt;div&gt;userID//foreign key&lt;/div&gt;&lt;div&gt;majorID//foreign key&lt;/div&gt;&lt;div&gt;Date of Birth&lt;/div&gt;&lt;div&gt;enrollment Date&lt;/div&gt;&lt;div&gt;graduation Date&lt;/div&gt;&lt;div&gt;Academic status&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-6">
+          <mxGeometry y="30" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-10" value="faculty" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="190" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-11" value="facultyID//primary key&lt;div&gt;userID//foreign key&lt;/div&gt;&lt;div&gt;departmentID//foreign key&lt;/div&gt;&lt;div&gt;appointmentDate&lt;/div&gt;&lt;div&gt;office&lt;/div&gt;&lt;div&gt;rank//position&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-10">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-14" value="administrator" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="290" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-15" value="adminID//primary key&lt;div&gt;userID//foreign key&lt;/div&gt;&lt;div&gt;access level(i.e. student or faulty roles)&lt;/div&gt;&lt;div&gt;department&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-14">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-18" value="Major" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="460" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-19" value="MajorID//primary key&lt;div&gt;MajorName&lt;/div&gt;&lt;div&gt;departmentID//foreign key&lt;/div&gt;&lt;div&gt;totalCredits&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-18">
+          <mxGeometry y="30" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-22" value="enrollment" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="550" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-23" value="enrollmentID//primary key&lt;div&gt;studentID//foreign key&lt;/div&gt;&lt;div&gt;courseID//foreign key&lt;/div&gt;&lt;div&gt;semesterID//foreign key&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;grade&lt;/span&gt;&lt;/div&gt;&lt;div&gt;enrollmentDate&lt;/div&gt;&lt;div&gt;Status&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-22">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-26" value="Department" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="451" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-27" value="DepartmentID//primary key" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-26">
+          <mxGeometry y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-28" value="departmentName&lt;div&gt;location&lt;/div&gt;&lt;div&gt;ID_HOD//foreign key&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-26">
+          <mxGeometry y="60" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-34" value="semester" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="650" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-35" value="semesterID//primary key&lt;div&gt;semester name&lt;/div&gt;&lt;div&gt;&lt;div&gt;start Date&lt;/div&gt;&lt;div&gt;end date&lt;/div&gt;&lt;div&gt;status&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-34">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-38" value="&lt;b&gt;Normalised conceptual diagram&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="365" y="30" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-39" value="courses" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="600" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-40" value="courseID//primary key&lt;div&gt;coursename&lt;/div&gt;&lt;div&gt;credits&lt;/div&gt;&lt;div&gt;description&lt;/div&gt;&lt;div&gt;prerequisites&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="_qPfLFHM5tEGFwe_nr7J-39">
+          <mxGeometry y="30" width="140" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-43" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="160" as="sourcePoint" />
+            <mxPoint x="220" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-44" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="530" y="180" as="sourcePoint" />
+            <mxPoint x="650" y="236" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-46" value="is&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22endArrow%3Dclassic%3Bhtml%3D1%3Brounded%3D0%3B%22%20edge%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20width%3D%2250%22%20height%3D%2250%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22370%22%20y%3D%22160%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22220%22%20y%3D%22240%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="140" width="60" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-47" value="is&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22endArrow%3Dclassic%3Bhtml%3D1%3Brounded%3D0%3B%22%20edge%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20width%3D%2250%22%20height%3D%2250%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22370%22%20y%3D%22160%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22220%22%20y%3D%22240%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="140" width="60" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-48" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="240" as="sourcePoint" />
+            <mxPoint x="420" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-49" value="is&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap-mode: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%22%20style%3D%22endArrow%3Dclassic%3Bhtml%3D1%3Brounded%3D0%3B%22%20edge%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20width%3D%2250%22%20height%3D%2250%22%20relative%3D%221%22%20as%3D%22geometry%22%3E%3CmxPoint%20x%3D%22370%22%20y%3D%22160%22%20as%3D%22sourcePoint%22%2F%3E%3CmxPoint%20x%3D%22220%22%20y%3D%22240%22%20as%3D%22targetPoint%22%2F%3E%3C%2FmxGeometry%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="250" width="60" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-63" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="520" as="sourcePoint" />
+            <mxPoint x="170" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-64" value="contains" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="390" width="60" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-65" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="350" as="sourcePoint" />
+            <mxPoint x="120" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-66" value="has" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-67" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="600" as="sourcePoint" />
+            <mxPoint x="260" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-68" value="contains" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="560" width="60" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-69" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="440" as="sourcePoint" />
+            <mxPoint x="710" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-70" value="employs&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="720" y="400" width="60" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-71" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="770" as="sourcePoint" />
+            <mxPoint x="240" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-74" value="includes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="760" width="60" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="_qPfLFHM5tEGFwe_nr7J-75" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;note on relationships&lt;/font&gt;&lt;/h1&gt;&lt;ol depth=&quot;0&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-decimal space-y-2 pl-8&quot;&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;User Inheritance Relationships (One-to-One):&lt;/li&gt;&lt;/ol&gt;&lt;ul depth=&quot;0&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-disc space-y-2 pl-8&quot;&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;USER to STUDENT: One user is exactly one student (is-a relationship)&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;USER to FACULTY: One user is exactly one faculty member (is-a relationship)&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;USER to ADMIN: One user is exactly one administrator (is-a relationship)&lt;/li&gt;&lt;/ul&gt;&lt;ol depth=&quot;0&quot; start=&quot;2&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-decimal space-y-2 pl-8&quot;&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;Student Relationships (One-to-Many):&lt;/li&gt;&lt;/ol&gt;&lt;ul depth=&quot;0&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-disc space-y-2 pl-8&quot;&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;STUDENT to ENROLLMENT: One student can have many enrollments&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;MAJOR to STUDENT: One major can have many students&lt;/li&gt;&lt;/ul&gt;&lt;ol depth=&quot;0&quot; start=&quot;3&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-decimal space-y-2 pl-8&quot;&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;Course Relationships:&lt;/li&gt;&lt;/ol&gt;&lt;ul depth=&quot;0&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-disc space-y-2 pl-8&quot;&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;COURSE to ENROLLMENT (Many-to-Many): Many courses can have many enrollments&lt;/li&gt;&lt;/ul&gt;&lt;ol depth=&quot;0&quot; start=&quot;4&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-decimal space-y-2 pl-8&quot;&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;Faculty Relationships:&lt;/li&gt;&lt;/ol&gt;&lt;ul depth=&quot;0&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-disc space-y-2 pl-8&quot;&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;DEPARTMENT to FACULTY (One-to-Many): One department can employ many faculty members&lt;/li&gt;&lt;/ul&gt;&lt;ol depth=&quot;0&quot; start=&quot;5&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-decimal space-y-2 pl-8&quot;&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;Support Entity Relationships&lt;/li&gt;&lt;/ol&gt;&lt;ul depth=&quot;0&quot; class=&quot;-mt-1 [li&gt;&amp;amp;]:mt-2 list-disc space-y-2 pl-8&quot;&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;SEMESTER to ENROLLMENT (One-to-Many): One semester includes many enrollments&lt;/li&gt;&lt;br&gt;&lt;li class=&quot;whitespace-normal break-words&quot;&gt;MAJOR to STUDENT (One-to-Many): One major contains many students&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="800" width="750" height="1020" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="lPn31uFuEWTN_Rw4kslh" name="Page-2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
